@@ -33,7 +33,6 @@ public class UserServiceImpl implements IUserService {
         }
 
         user.setPassword(StringUtils.EMPTY);
-        user.setQuestion(StringUtils.EMPTY);
         user.setAnswer(StringUtils.EMPTY);
         return ServerResponse.createBySuccess("登陆成功", user);
     }
@@ -179,9 +178,6 @@ public class UserServiceImpl implements IUserService {
         return ServerResponse.createBySuccess(user);
 
     }
-
-
-
 
     //backend
 
